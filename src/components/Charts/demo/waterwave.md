@@ -12,7 +12,7 @@ ReactDOM.render(
   <div style={{ textAlign: 'center' }}>
     <WaterWave
       height={161}
-      title="补贴资金剩余"
+      title="设备激活率"
       percent={34}
     />
   </div>
