@@ -223,29 +223,29 @@ export default [
         icon: 'user',
         path: '/account',
         routes: [
-          {
-            path: '/account/center',
-            name: 'center',
-            component: './Account/Center/Center',
-            routes: [
-              {
-                path: '/account/center',
-                redirect: '/account/center/articles',
-              },
-              {
-                path: '/account/center/articles',
-                component: './Account/Center/Articles',
-              },
-              {
-                path: '/account/center/applications',
-                component: './Account/Center/Applications',
-              },
-              {
-                path: '/account/center/projects',
-                component: './Account/Center/Projects',
-              },
-            ],
-          },
+          // {
+          //   path: '/account/center',
+          //   name: 'center',
+          //   component: './Account/Center/Center',
+          //   routes: [
+          //     {
+          //       path: '/account/center',
+          //       redirect: '/account/center/articles',
+          //     },
+          //     {
+          //       path: '/account/center/articles',
+          //       component: './Account/Center/Articles',
+          //     },
+          //     {
+          //       path: '/account/center/applications',
+          //       component: './Account/Center/Applications',
+          //     },
+          //     {
+          //       path: '/account/center/projects',
+          //       component: './Account/Center/Projects',
+          //     },
+          //   ],
+          // },
           {
             path: '/account/settings',
             name: 'settings',

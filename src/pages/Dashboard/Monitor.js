@@ -5,7 +5,7 @@ import { Row, Col, Card, Tooltip } from 'antd';
 import { Pie, WaterWave, Gauge, TagCloud } from '@/components/Charts';
 import NumberInfo from '@/components/NumberInfo';
 import CountDown from '@/components/CountDown';
-import ActiveChart from '@/components/ActiveChart';
+// import ActiveChart from '@/components/ActiveChart';
 import numeral from 'numeral';
 import GridContent from '@/components/PageHeaderWrapper/GridContent';
 
@@ -36,8 +36,8 @@ class Monitor extends PureComponent {
   }
 
   render() {
-    const { monitor, loading } = this.props;
-    const { tags } = monitor;
+    const { monitor } = this.props;
+    // const {} = monitor;
 
     return (
       <GridContent>
@@ -61,8 +61,8 @@ class Monitor extends PureComponent {
                         defaultMessage="Total transactions today"
                       />
                     }
-                    suffix="元"
-                    total={numeral(124543233).format('0,0')}
+                    suffix=""
+                    total={<CountDown target={targetTime} />}
                   />
                 </Col>
                 <Col md={6} sm={12} xs={24}>
@@ -95,7 +95,7 @@ class Monitor extends PureComponent {
                         defaultMessage="Total transactions per second"
                       />
                     }
-                    suffix="元"
+                    suffix=""
                     total={numeral(234).format('0,0')}
                   />
                 </Col>
@@ -110,7 +110,7 @@ class Monitor extends PureComponent {
                   }
                 >
                   <img
-                    src="https://gw.alipayobjects.com/zos/rmsportal/HBWnDEUXCnGnGrRfrpKa.png"
+                    src={require('../../assets/61544004559_.pic_hd.jpg')}
                     alt="map"
                   />
                 </Tooltip>
